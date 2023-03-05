@@ -9,50 +9,47 @@ const router = createBrowserRouter([
     path: "/",
     element: <Root />,
     children: [
+      { path: "/transactions", element: <Transactions /> },
       {
-        path: "/dashboard",
-        element: <Transactions />,
-      },
-      {
-        path: "/transaction",
+        path: "/transaction-report",
         element: <TransactReport />,
       },
-      {
-        path: "//terminal-health",
-        element: <TransactReport />,
-      },
-      {
-        path: "/settlement",
-        element: <TransactReport />,
-      },
-      {
-        path: "/performance",
-        element: <TransactReport />,
-      },
-      {
-        path: "/statements",
-        element: <TransactReport />,
-      },
-      {
-        path: "/my-terminal",
-        element: <TransactReport />,
-      },
-      {
-        path: "/settings",
-        element: <TransactReport />,
-      },
-      {
-        path: "/message-center",
-        element: <TransactReport />,
-      },
-      {
-        path: "/reconcilation",
-        element: <TransactReport />,
-      },
-      {
-        path: "/Dispute-management",
-        element: <TransactReport />,
-      },
+      // {
+      //   path: "//terminal-health",
+      //   element: <TransactReport />,
+      // },
+      // {
+      //   path: "/settlement",
+      //   element: <TransactReport />,
+      // },
+      // {
+      //   path: "/performance",
+      //   element: <TransactReport />,
+      // },
+      // {
+      //   path: "/statements",
+      //   element: <TransactReport />,
+      // },
+      // {
+      //   path: "/my-terminal",
+      //   element: <TransactReport />,
+      // },
+      // {
+      //   path: "/settings",
+      //   element: <TransactReport />,
+      // },
+      // {
+      //   path: "/message-center",
+      //   element: <TransactReport />,
+      // },
+      // {
+      //   path: "/reconcilation",
+      //   element: <TransactReport />,
+      // },
+      // {
+      //   path: "/Dispute-management",
+      //   element: <TransactReport />,
+      // },
     ],
   },
 ]);

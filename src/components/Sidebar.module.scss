@@ -1,4 +1,10 @@
-// SIDEBAR
+@mixin flexSideBar {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  align-items: center;
+}
+
 .sidebar {
   width: 16%;
   background-color: white;
@@ -8,8 +14,6 @@
   flex-direction: column;
   font-family: "Open Sans";
   font-style: normal;
-
-  position: fixed;
   max-height: 100%;
   gap: 1rem;
   h5 {
@@ -18,11 +22,8 @@
     font-size: 0.6rem;
     line-height: 19px;
   }
-  a {
-    display: flex;
-    flex-direction: row;
-    gap: 0.4rem;
-    align-items: center;
+  .notActive {
+    @include flexSideBar;
     img {
       height: 1rem;
       width: 1rem;
@@ -37,8 +38,13 @@
 }
 
 .active {
-  color: #4c6fff;
-  font-weight: 700;
+  @include flexSideBar;
+  h4 {
+    font-size: 0.8rem;
+    line-height: 22px;
+    color: #4c6fff;
+    font-weight: 700;
+  }
 }
 
 .subsection {

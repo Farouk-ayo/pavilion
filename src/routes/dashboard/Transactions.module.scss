@@ -1,0 +1,70 @@
+@mixin paragraph {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+@mixin headerText {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 44px;
+  letter-spacing: 0em;
+}
+main {
+  padding: 3rem 2rem;
+  position: relative;
+  width: 84%;
+  color: #1d242d;
+  background-color: #f7fafc;
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.welcomeBack {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.text {
+  font-family: Open Sans;
+
+  h1 {
+    @include headerText();
+  }
+  p {
+    @include paragraph();
+  }
+}
+
+.date {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  p {
+    @include paragraph();
+  }
+}
+
+.arrowDown {
+  background-color: #edf1ff;
+}
+
+.navlinks {
+  display: flex;
+}
+.notActive {
+  padding: 0.7rem 1rem;
+  background-color: white;
+  border-radius: 0.2rem;
+}
+
+.active {
+  background-color: #4c6fff;
+  color: white;
+  border-radius: 0.2rem;
+  padding: 0.7rem 1rem;
+}

@@ -11,18 +11,18 @@ import message from "../assets/message.svg";
 import reconcilation from "../assets/reconcilation.svg";
 import dispute from "../assets/dispute.svg";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import "./Sidebar.scss";
+import classes from "./Sidebar.module.scss";
 
 const Sidebar = () => {
   return (
-    <section className="sidebar">
+    <section className={classes.sidebar}>
       <h5>POS Monitoring</h5>
 
       {/* DASHBOARD  */}
       <NavLink
-        to="/dashboard"
+        to="/transactions"
         className={({ isActive }) => {
-          isActive ? "active" : undefined;
+          return isActive ? classes.active : classes.notActive;
         }}
       >
         <MdDashboard color="#909DAD" size={20} />
@@ -31,11 +31,11 @@ const Sidebar = () => {
       </NavLink>
 
       {/* TRANSACTION */}
-      <div className="subsection">
+      <div className={classes.subsection}>
         <NavLink
-          to="/transaction"
+          to="/transaction-report"
           className={({ isActive }) => {
-            isActive ? "active" : undefined;
+            return isActive ? classes.active : classes.notActive;
           }}
         >
           <img src={pointOfSale} alt="" />
@@ -45,11 +45,11 @@ const Sidebar = () => {
         <MdOutlineKeyboardArrowDown color="#909DAD" size={20} />
       </div>
       {/* TERMINAL HEALTH  */}
-      <div className="subsection">
+      <div className={classes.subsection}>
         <NavLink
           to="/terminal-health"
           className={({ isActive }) => {
-            isActive ? "active" : undefined;
+            return isActive ? classes.active : classes.notActive;
           }}
         >
           <img src={terminalHealth} alt="" />
@@ -60,11 +60,11 @@ const Sidebar = () => {
       </div>
 
       {/* SETTLEMENTS  */}
-      <div className="subsection">
+      <div className={classes.subsection}>
         <NavLink
           to="/settlement"
           className={({ isActive }) => {
-            isActive ? "active" : undefined;
+            return isActive ? classes.active : classes.notActive;
           }}
         >
           <img src={settlement} alt="" />
@@ -75,11 +75,11 @@ const Sidebar = () => {
       </div>
 
       {/* PERFORMANCE  */}
-      <div className="subsection">
+      <div className={classes.subsection}>
         <NavLink
           to="/performance"
           className={({ isActive }) => {
-            isActive ? "active" : undefined;
+            return isActive ? classes.active : classes.notActive;
           }}
         >
           <img src={performance} alt="" />
@@ -93,7 +93,7 @@ const Sidebar = () => {
       <NavLink
         to="/statements"
         className={({ isActive }) => {
-          isActive ? "active" : undefined;
+          return isActive ? classes.active : classes.notActive;
         }}
       >
         <img src={statements} alt="" />
@@ -104,7 +104,7 @@ const Sidebar = () => {
       <NavLink
         to="/my-terminal"
         className={({ isActive }) => {
-          isActive ? "active" : undefined;
+          return isActive ? classes.active : classes.notActive;
         }}
       >
         <img src={shoppingPos} alt="" />
@@ -113,11 +113,11 @@ const Sidebar = () => {
       </NavLink>
 
       {/* SETTINGS  */}
-      <div className="subsection">
+      <div className={classes.subsection}>
         <NavLink
           to="/settings"
           className={({ isActive }) => {
-            isActive ? "active" : undefined;
+            return isActive ? classes.active : classes.notActive;
           }}
         >
           <img src={settings} alt="" />
@@ -131,7 +131,7 @@ const Sidebar = () => {
       <NavLink
         to="/message-center"
         className={({ isActive }) => {
-          isActive ? "active" : undefined;
+          return isActive ? classes.active : classes.notActive;
         }}
       >
         <img src={message} alt="" />
@@ -143,7 +143,7 @@ const Sidebar = () => {
       <NavLink
         to="/reconcilation"
         className={({ isActive }) => {
-          isActive ? "active" : undefined;
+          return isActive ? classes.active : classes.notActive;
         }}
       >
         <img src={reconcilation} alt="" />
@@ -155,7 +155,7 @@ const Sidebar = () => {
       <NavLink
         to="/Dispute-management"
         className={({ isActive }) => {
-          isActive ? "active" : undefined;
+          return isActive ? classes.active : classes.notActive;
         }}
       >
         <img src={dispute} alt="" />
