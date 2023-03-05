@@ -39,6 +39,10 @@
 
 .active {
   @include flexSideBar;
+  img {
+    height: 1rem;
+    width: 1rem;
+  }
   h4 {
     font-size: 0.8rem;
     line-height: 22px;

@@ -1,5 +1,8 @@
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { BsArrowDown } from "react-icons/bs";
+import { TfiReload } from "react-icons/tfi";
 import { NavLink } from "react-router-dom";
+import { Details } from "./Data";
 import classes from "./Transactions.module.scss";
 
 const Transactions = () => {
@@ -16,7 +19,7 @@ const Transactions = () => {
             <MdOutlineKeyboardArrowDown
               color="#4C6FFF"
               size={30}
-              className={classes.arrowDown}
+              className={classes.navIcon}
             />
           </span>
         </div>
@@ -63,8 +66,35 @@ const Transactions = () => {
           </NavLink>
         </div>
 
-        <div></div>
-        <div></div>
+        <div className={classes.transactions}>
+          {Details.map((each) => (
+            <section key={each.id}>
+              <div>
+                <img src={each.icon} alt="" />
+                <p>{each.transaction}</p>
+              </div>
+              <h2>{each.price}</h2>
+            </section>
+          ))}
+        </div>
+        <div className={classes.liveMonitor}>
+          <span>
+            <h2>Live Monitoring</h2>
+            <div>
+              <TfiReload
+                color="#4C6FFF"
+                size={30}
+                className={classes.navIcon}
+              />
+              <BsArrowDown
+                color="#4C6FFF"
+                size={30}
+                className={classes.navIcon}
+              />
+              <img src="" alt="" />
+            </div>
+          </span>
+        </div>
       </section>
     </main>
   );
