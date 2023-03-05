@@ -1,12 +1,8 @@
-
-import './App.css'
+import "./App.scss";
+import Header from "./ui/Header";
 
 function App() {
- 
-
-  return (
-   <div>goat</div>
-  )
+  return <Header />;
 }
 
-export default App
+export default App;
