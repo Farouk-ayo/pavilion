@@ -17,20 +17,12 @@
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   background-color: white;
   div {
     display: flex;
     align-items: center;
     justify-content: start;
     gap: 1rem;
-  }
-}
-
-// SIDEBAR
-.sidebar {
-  h5 {
-    color: #1d242d;
-    font-size: 0.7rem;
   }
 }

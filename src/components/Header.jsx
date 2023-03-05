@@ -1,8 +1,8 @@
-import menu from "../assets/menu.png";
-import notification from "../assets/notification.png";
-import profile from "../assets/Profile.jpg";
-import "./ui.scss";
-import SearchInput from "../components/Search";
+import menu from "../assets/menu.svg";
+import notification from "../assets/notification.svg";
+import profile from "../assets/Profile.svg";
+import "./Header.scss";
+import SearchInput from "./Search";
 
 const Header = () => {
   return (

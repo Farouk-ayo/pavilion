@@ -1,0 +1,48 @@
+// SIDEBAR
+.sidebar {
+  width: 16%;
+  background-color: white;
+  padding-left: 2.5rem;
+  padding-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  position: fixed;
+  max-height: 100%;
+  gap: 1rem;
+  h5 {
+    color: #1d242d;
+    font-weight: 600;
+    font-size: 0.6rem;
+    line-height: 19px;
+  }
+  a {
+    display: flex;
+    flex-direction: row;
+    gap: 0.4rem;
+    align-items: center;
+    img {
+      height: 1rem;
+      width: 1rem;
+    }
+    h4 {
+      font-size: 0.8rem;
+      line-height: 22px;
+      font-weight: 400;
+      color: #909dad;
+    }
+  }
+}
+
+.active {
+  color: #4c6fff;
+  font-weight: 700;
+}
+
+.subsection {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
