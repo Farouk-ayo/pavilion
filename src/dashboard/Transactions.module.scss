@@ -10,10 +10,19 @@
   line-height: 44px;
   letter-spacing: 0em;
 }
+
+@mixin subText {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+}
 main {
   padding: 3rem 2rem;
   position: relative;
-  width: 84%;
+  top: 4rem;
+  width: 80%;
+  left: 20%;
   color: #1d242d;
   background-color: #f7fafc;
 }
@@ -50,24 +59,6 @@ main {
 .navIcon {
   background-color: #edf1ff;
   padding: 0.3rem 0rem;
-}
-
-.navlinks {
-  display: flex;
-}
-.notActive {
-  padding: 0.7rem 1rem;
-  background-color: white;
-  border-radius: 0.2rem;
-  font-weight: 600;
-}
-
-.active {
-  background-color: #4c6fff;
-  color: white;
-  border-radius: 0.2rem;
-  padding: 0.7rem 1rem;
-  font-weight: 600;
 }
 
 .transactions {
@@ -108,10 +99,7 @@ main {
   flex-direction: column;
   gap: 2rem;
   h2 {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 33px;
-    letter-spacing: 0em;
+    @include subText();
   }
   span {
     display: flex;
@@ -120,5 +108,15 @@ main {
       display: flex;
       gap: 0.5rem;
     }
+  }
+}
+
+.HourlyDistribute {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2rem;
+  h2 {
+    @include subText();
   }
 }

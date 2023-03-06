@@ -146,8 +146,8 @@ export const transactDetails = [
   },
   {
     id: 10,
-    time: "10:30 am",
-    amount: "2,000",
+    time: "10:05 am",
+    amount: "50,000",
     paymentType: "Card",
     terminal: "09087043AA",
     account: "07613*******67",
@@ -159,8 +159,8 @@ export const transactDetails = [
   },
   {
     id: 11,
-    time: "10:30 am",
-    amount: "2,000",
+    time: "9:50 am",
+    amount: "3,500",
     paymentType: "Card",
     terminal: "09087043AA",
     account: "07613*******67",
@@ -172,8 +172,8 @@ export const transactDetails = [
   },
   {
     id: 12,
-    time: "10:30 am",
-    amount: "2,000",
+    time: "9:35 am",
+    amount: "91,250",
     paymentType: "Card",
     terminal: "09087043AA",
     account: "07613*******67",
@@ -185,40 +185,53 @@ export const transactDetails = [
   },
   {
     id: 13,
-    time: "10:30 am",
-    amount: "2,000",
+    time: "9:20 am",
+    amount: "40,000",
     paymentType: "Card",
     terminal: "09087043AA",
     account: "07613*******67",
     status: (
-      <Button backgroundColor="#FCE8E8" color="#DC1D1D" size="xs">
-        Failed
+      <Button backgroundColor="#C3F1CA" color="#3DD154" size="xs">
+        Approved
       </Button>
     ),
   },
   {
     id: 14,
-    time: "10:30 am",
-    amount: "2,000",
+    time: "8:15 am",
+    amount: "12,400",
     paymentType: "Card",
     terminal: "09087043AA",
     account: "07613*******67",
     status: (
-      <Button backgroundColor="#FCE8E8" color="#DC1D1D" size="xs">
-        Failed
+      <Button backgroundColor="#C3F1CA" color="#3DD154" size="xs">
+        Approved
       </Button>
     ),
   },
   {
     id: 15,
-    time: "10:30 am",
-    amount: "2,000",
+    time: "8:10 am",
+    amount: "2,140",
     paymentType: "Card",
     terminal: "09087043AA",
     account: "07613*******67",
     status: (
-      <Button backgroundColor="#FCE8E8" color="#DC1D1D" size="xs">
-        Failed
+      <Button backgroundColor="#C3F1CA" color="#3DD154" size="xs">
+        Approved
+      </Button>
+    ),
+  },
+  {
+    id: 16,
+    time: "7:40 am",
+    amount: "4,000",
+    paymentType: "Card",
+    terminal: "09087043AA",
+    account: "07613*******67",
+    status: (
+      <Button backgroundColor="#C3F1CA" color="#3DD154" size="xs">
+        Approved
       </Button>
     ),
   },

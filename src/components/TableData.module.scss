@@ -54,9 +54,15 @@
   }
 }
 
-.tableContainer::-webkit-scrollbar {
+tbody::after {
+  content: "";
+  position: relative;
   border-radius: 10px;
   background-color: #adbdff;
   width: 0.5rem;
-  height: fit-content;
+  height: 0.5rem;
+}
+
+.tableContainer::-webkit-scrollbar {
+  display: none;
 }

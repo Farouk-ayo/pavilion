@@ -1,0 +1,17 @@
+.navlinks {
+  display: flex;
+}
+.notActive {
+  padding: 0.7rem 1rem;
+  background-color: white;
+  border-radius: 0.2rem;
+  font-weight: 600;
+}
+
+.active {
+  background-color: #4c6fff;
+  color: white;
+  border-radius: 0.2rem;
+  padding: 0.7rem 1rem;
+  font-weight: 600;
+}

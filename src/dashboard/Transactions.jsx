@@ -1,16 +1,19 @@
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { BsArrowDown } from "react-icons/bs";
 import { TfiReload } from "react-icons/tfi";
-import { NavLink } from "react-router-dom";
+
 import { Details } from "./Data";
 import classes from "./Transactions.module.scss";
 import Table from "../components/Table";
+import Navigation from "../components/Navigation";
+
+import ColumnChart from "../components/ColumnChart";
 
 const Transactions = () => {
   return (
     <main>
       <section className={classes.welcome}>
-        <div className={classes.welcomeBack}>
+        <section className={classes.welcomeBack}>
           <span className={classes.text}>
             <h1>Welcome back</h1>
             <p>Here’s what is happening with your Terminals today,</p>
@@ -23,51 +26,9 @@ const Transactions = () => {
               className={classes.navIcon}
             />
           </span>
-        </div>
-        <div className={classes.navlinks}>
-          <NavLink
-            to="/transactions"
-            className={({ isActive }) => {
-              return isActive ? classes.active : classes.notActive;
-            }}
-          >
-            Transactions
-          </NavLink>
-          <NavLink
-            to="/settlement"
-            className={({ isActive }) => {
-              return isActive ? classes.active : classes.notActive;
-            }}
-          >
-            Settlements
-          </NavLink>
-          <NavLink
-            to="/performance"
-            className={({ isActive }) => {
-              return isActive ? classes.active : classes.notActive;
-            }}
-          >
-            Performance
-          </NavLink>
-          <NavLink
-            to="/terminal-health"
-            className={({ isActive }) => {
-              return isActive ? classes.active : classes.notActive;
-            }}
-          >
-            Terminal Health
-          </NavLink>
-          <NavLink
-            to="/statements"
-            className={({ isActive }) => {
-              return isActive ? classes.active : classes.notActive;
-            }}
-          >
-            Bank Statement
-          </NavLink>
-        </div>
-
-        <div className={classes.transactions}>
+        </section>
+        <Navigation />
+        <section className={classes.transactions}>
           {Details.map((each) => (
             <section key={each.id}>
               <div>
@@ -77,8 +38,9 @@ const Transactions = () => {
               <h2>{each.price}</h2>
             </section>
           ))}
-        </div>
-        <div className={classes.liveMonitor}>
+        </section>
+
+        <section className={classes.liveMonitor}>
           <span>
             <h2>Live Monitoring</h2>
             <div>
@@ -94,9 +56,13 @@ const Transactions = () => {
               />
               <img src="" alt="" />
             </div>
-          </span>
-        </div>
-        <Table/>
+          </span>{" "}
+          <Table />
+        </section>
+
+        <section className={classes.HourlyDistribute}>
+          <h2>Hourly Distribution</h2> <ColumnChart />
+        </section>
       </section>
     </main>
   );
