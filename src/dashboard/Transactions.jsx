@@ -1,13 +1,13 @@
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { BsArrowDown } from "react-icons/bs";
 import { TfiReload } from "react-icons/tfi";
-
 import { Details } from "./Data";
 import classes from "./Transactions.module.scss";
 import Table from "../components/Table";
 import Navigation from "../components/Navigation";
-
 import ColumnChart from "../components/ColumnChart";
+import PieChart from "../components/PieChart";
+import { Button } from "@chakra-ui/react";
 
 const Transactions = () => {
   return (
@@ -56,12 +56,33 @@ const Transactions = () => {
               />
               <img src="" alt="" />
             </div>
-          </span>{" "}
+          </span>
           <Table />
         </section>
 
         <section className={classes.HourlyDistribute}>
-          <h2>Hourly Distribution</h2> <ColumnChart />
+          <h2>Hourly Distribution</h2>
+          <ColumnChart />
+        </section>
+        <section className={classes.failedTransact}>
+          <h2>Failed Transactions</h2>
+          <section>
+            <PieChart />
+            <div className={classes.failedDetails}>
+              <span>
+                <h2>10,000</h2>
+                <p>Here’s why your transactions failed!</p>
+              </span>
+              <div className={classes.btnGroup}>
+                <button className={classes.btnActive}>Cardholder</button>
+
+                <button className={classes.btn}>Acquirer</button>
+                <button className={classes.btn}>Issuer</button>
+                <button className={classes.btn}>Switch</button>
+                <button className={classes.btn}>Undefined</button>
+              </div>
+            </div>
+          </section>
         </section>
       </section>
     </main>

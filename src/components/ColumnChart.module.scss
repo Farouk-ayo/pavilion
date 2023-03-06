@@ -1,6 +1,6 @@
 .Chart {
   background-color: white;
-  padding: 2rem;
+  padding: 2rem 2rem 4rem 2rem;
   border-radius: 10px;
   position: relative;
 }
@@ -25,7 +25,11 @@
 }
 
 .btn {
+  color: #ffff;
+  background-color: #4c6fff;
   position: absolute;
-
-  right: 0;
+  right: 5rem;
+  bottom: 3rem;
+  padding: 0.5rem 0.7rem;
+  border-radius: 5px;
 }

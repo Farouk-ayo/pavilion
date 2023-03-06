@@ -5,13 +5,13 @@ import classes from "./Root.module.scss";
 
 const Root = () => {
   return (
-    <body>
+    <section>
       <Header />
       <div className={classes.main}>
         <Sidebar />
         <Outlet />
       </div>
-    </body>
+    </section>
   );
 };
 export default Root;

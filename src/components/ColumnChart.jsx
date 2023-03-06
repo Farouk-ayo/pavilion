@@ -17,6 +17,7 @@ const ColumnChart = () => {
     },
     plotOptions: {
       bar: {
+        weight: 0.2,
         horizontal: false,
         columnWidth: "40%",
         endingShape: "rounded",
@@ -119,14 +120,9 @@ const ColumnChart = () => {
         type="bar"
         height={450}
       />
-      <Button
-        className={classes.btn}
-        backgroundColor="#4C6FFF"
-        color="#ffff"
-        size="md"
-      >
+      <button className={classes.btn} size="md">
         View Table
-      </Button>
+      </button>
     </div>
   );
 };
