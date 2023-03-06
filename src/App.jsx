@@ -1,8 +1,7 @@
 import "./App.scss";
-import Transactions from "./routes/dashboard/Transactions";
+import Transactions from "./dashboard/Transactions";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Root from "./routes/Root";
-import TransactReport from "./routes/transaction/TransactReport";
+import Root from "./dashboard/Root";
 
 const router = createBrowserRouter([
   {
@@ -10,10 +9,10 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       { path: "/transactions", element: <Transactions /> },
-      {
-        path: "/transaction-report",
-        element: <TransactReport />,
-      },
+      // {
+      //   path: "/transaction-report",
+      //   element: <TransactReport />,
+      // },
       // {
       //   path: "//terminal-health",
       //   element: <TransactReport />,

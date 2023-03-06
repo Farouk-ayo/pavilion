@@ -1,0 +1,62 @@
+@mixin tableData {
+  width: calc(100% / 6);
+  padding: 0.9rem 0rem 0.9rem 2rem;
+  letter-spacing: 0em;
+}
+
+@mixin tableSection {
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+}
+
+.tableContainer {
+  background-color: white;
+  border-radius: 10px;
+  max-height: 30rem;
+  overflow-y: scroll;
+
+  table {
+    margin: 0rem 1.5rem;
+
+    thead {
+      background-color: #edf1ff;
+      @include tableSection();
+
+      tr {
+        display: flex;
+        th {
+          @include tableData;
+          font-size: 1rem;
+          font-weight: 700;
+          line-height: 22px;
+          text-align: left;
+        }
+      }
+    }
+    tbody {
+      @include tableSection();
+      tr {
+        display: flex;
+        background-color: white;
+        td {
+          @include tableData();
+          margin-bottom: 0.1rem;
+          font-size: 0.8rem;
+          font-weight: 400;
+          line-height: 19px;
+          letter-spacing: 0em;
+          text-align: left;
+          background-color: #f7fafc;
+        }
+      }
+    }
+  }
+}
+
+.tableContainer::-webkit-scrollbar {
+  border-radius: 10px;
+  background-color: #adbdff;
+  width: 0.5rem;
+  height: fit-content;
+}

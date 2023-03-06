@@ -4,6 +4,7 @@ import { TfiReload } from "react-icons/tfi";
 import { NavLink } from "react-router-dom";
 import { Details } from "./Data";
 import classes from "./Transactions.module.scss";
+import Table from "../components/Table";
 
 const Transactions = () => {
   return (
@@ -95,6 +96,7 @@ const Transactions = () => {
             </div>
           </span>
         </div>
+        <Table/>
       </section>
     </main>
   );
