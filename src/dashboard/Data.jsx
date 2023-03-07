@@ -252,7 +252,7 @@ export const CardDetails = [
   {
     id: 1,
     type: "Visa",
-    image: { visa },
+    image: visa,
     approve: "30%",
     approvePrice: "512",
     failed: "70%",
@@ -261,7 +261,7 @@ export const CardDetails = [
   {
     id: 2,
     type: "Master Card",
-    image: { masterCard },
+    image: masterCard,
     approve: "75%",
     approvePrice: "1000",
     failed: "25%",
@@ -270,7 +270,7 @@ export const CardDetails = [
   {
     id: 3,
     type: "Verve",
-    image: { verve },
+    image: verve,
     approve: "20%",
     approvePrice: "121",
     failed: "80%",
@@ -279,7 +279,7 @@ export const CardDetails = [
   {
     id: 4,
     type: "Card Type",
-    image: { defaultCard },
+    image: defaultCard,
     approve: "percent",
     approvePrice: "Value",
     failed: "percent",
@@ -288,7 +288,7 @@ export const CardDetails = [
   {
     id: 5,
     type: "Card Type",
-    image: { defaultCard },
+    image: defaultCard,
     approve: "percent",
     approvePrice: "Value",
     failed: "percent",
@@ -297,7 +297,7 @@ export const CardDetails = [
   {
     id: 6,
     type: "Card Type",
-    image: { defaultCard },
+    image: defaultCard,
     approve: "percent",
     approvePrice: "Value",
     failed: "percent",

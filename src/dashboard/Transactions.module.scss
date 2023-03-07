@@ -21,7 +21,7 @@
 @mixin flexColumn {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 main {
   padding: 3rem 2rem;
@@ -33,7 +33,9 @@ main {
   background-color: #f7fafc;
 }
 .welcome {
-  @include flexColumn();
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 .welcomeBack {
   display: flex;

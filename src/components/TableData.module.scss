@@ -54,13 +54,13 @@
   }
 }
 
-tbody::after {
-  content: "";
-  position: relative;
+tbody::before {
+  content: url("../assets/sidebar.svg");
+  position: absolute;
   border-radius: 10px;
-  background-color: #adbdff;
-  width: 0.5rem;
-  height: 0.5rem;
+  right: 1.3rem;
+
+  top: 3.5rem;
 }
 
 .tableContainer::-webkit-scrollbar {

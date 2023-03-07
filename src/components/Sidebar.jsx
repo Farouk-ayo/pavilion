@@ -20,7 +20,7 @@ const Sidebar = () => {
 
       {/* DASHBOARD  */}
       <NavLink
-        to="/transactions"
+        to="/"
         className={({ isActive }) => {
           return isActive ? classes.active : classes.notActive;
         }}

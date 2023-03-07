@@ -5,7 +5,24 @@ const Card = () => {
   return (
     <section className={classes.card}>
       {CardDetails.map((eachCard) => (
-        <div className={classes.each}>{eachCard.type}</div>
+        <div key={eachCard.id} className={classes.each}>
+          <h3>{eachCard.type}</h3>
+          <img src={eachCard.image} alt="" />
+          <div>
+            <span className={classes.approve}>
+              <h3>
+                Approved <span>({eachCard.approve})</span>
+              </h3>
+              <h1>{eachCard.approvePrice}</h1>
+            </span>
+            <span className={classes.failed}>
+              <h3>
+                Failed <span>({eachCard.failed})</span>
+              </h3>
+              <h1>{eachCard.failedPrice}</h1>
+            </span>
+          </div>
+        </div>
       ))}
     </section>
   );
