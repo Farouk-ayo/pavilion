@@ -247,6 +247,70 @@ export const transactDetails = [
   },
 ];
 
+// FAILED TRANSACT DETAILS
+export const failedDetails = [
+  {
+    id: 1,
+    number: "51",
+    reason: "(Not sufficient funds)",
+    price: "1,110",
+  },
+  {
+    id: 2,
+    number: "51",
+    reason: "(Not sufficient funds)",
+    price: "1,110",
+  },
+  {
+    id: 3,
+    number: "51",
+    reason: "(Not sufficient funds)",
+    price: "1,110",
+  },
+  {
+    id: 4,
+    number: "51",
+    reason: "(Not sufficient funds)",
+    price: "1,110",
+  },
+  {
+    id: 5,
+    number: "51",
+    reason: "(Not sufficient funds)",
+    price: "1,110",
+  },
+  {
+    id: 6,
+    number: "51",
+    reason: "(Not sufficient funds)",
+    price: "1,110",
+  },
+  {
+    id: 7,
+    number: "51",
+    reason: "(Not sufficient funds)",
+    price: "1,110",
+  },
+  {
+    id: 8,
+    number: "51",
+    reason: "(Not sufficient funds)",
+    price: "1,110",
+  },
+  {
+    id: 9,
+    number: "51",
+    reason: "(Not sufficient funds)",
+    price: "1,110",
+  },
+  {
+    id: 10,
+    number: "51",
+    reason: "(Not sufficient funds)",
+    price: "1,110",
+  },
+];
+
 // CARD DETAILS
 export const CardDetails = [
   {

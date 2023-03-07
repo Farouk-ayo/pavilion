@@ -1,18 +1,19 @@
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { BsArrowDown } from "react-icons/bs";
 import { TfiReload } from "react-icons/tfi";
-import { Details } from "./Data";
+import { Details, failedDetails } from "./Data";
 import classes from "./Transactions.module.scss";
 import Table from "../components/Table";
-import Navigation from "../components/Navigation";
-import ColumnChart from "../components/ColumnChart";
-import PieChart from "../components/PieChart";
+import Navigation from "../components/layout/Navigation";
+import ColumnChart from "../components/charts/ColumnChart";
+import PieChart from "../components/charts/PieChart";
 import Card from "../components/Card";
 
 const Transactions = () => {
   return (
     <main>
-      <section className={classes.welcome}>
+      <section className={classes.dashboard}>
+        {/* WELCOME BACK  */}
         <section className={classes.welcomeBack}>
           <span className={classes.text}>
             <h1>Welcome back</h1>
@@ -40,6 +41,7 @@ const Transactions = () => {
           ))}
         </section>
 
+        {/* LIVE-MONITORING  */}
         <section className={classes.liveMonitor}>
           <span>
             <h2>Live Monitoring</h2>
@@ -60,10 +62,13 @@ const Transactions = () => {
           <Table />
         </section>
 
+        {/* HOURLY DISTRIBUTION  */}
         <section className={classes.HourlyDistribute}>
           <h2>Hourly Distribution</h2>
           <ColumnChart />
         </section>
+
+        {/* FAILED TRANSACTIONS  */}
         <section className={classes.failedTransact}>
           <h2>Failed Transactions</h2>
           <section>
@@ -82,70 +87,22 @@ const Transactions = () => {
                 <button className={classes.btn}>Undefined</button>
               </div>
               <ul className={classes.funds}>
-                <li>
-                  <p>
-                    <span>51 (Not sufficient funds)</span>
-                    <span>1,110</span>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>51 (Not sufficient funds)</span>
-                    <span>1,110</span>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>51 (Not sufficient funds)</span>
-                    <span>1,110</span>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>51 (Not sufficient funds)</span>
-                    <span>1,110</span>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>51 (Not sufficient funds)</span>
-                    <span>1,110</span>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>51 (Not sufficient funds)</span>
-                    <span>1,110</span>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>51 (Not sufficient funds)</span>
-                    <span>1,110</span>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>51 (Not sufficient funds)</span>
-                    <span>1,110</span>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>51 (Not sufficient funds)</span>
-                    <span>1,110</span>
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>51 (Not sufficient funds)</span>
-                    <span>1,110</span>
-                  </p>
-                </li>
+                {failedDetails.map((each) => (
+                  <li key={each.id}>
+                    <p>
+                      <span>
+                        {each.number} {each.reason}
+                      </span>
+                      <span>{each.price}</span>
+                    </p>
+                  </li>
+                ))}
               </ul>
             </div>
           </section>
         </section>
+
+        {/* TRANSACTION PER CARD TYPE  */}
         <section className={classes.card}>
           <h2>Transactions Per Card Type</h2>
           <Card />

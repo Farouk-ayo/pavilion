@@ -1,15 +1,15 @@
 import { NavLink } from "react-router-dom";
 import { MdDashboard } from "react-icons/md";
-import pointOfSale from "../assets/point-of-sale-terminal.svg";
-import terminalHealth from "../assets/love-terminal.svg";
-import settlement from "../assets/settlement.svg";
-import performance from "../assets/performance.svg";
-import statements from "../assets/statements.svg";
-import shoppingPos from "../assets/shopping-pos.svg";
-import settings from "../assets/settings.svg";
-import message from "../assets/message.svg";
-import reconcilation from "../assets/reconcilation.svg";
-import dispute from "../assets/dispute.svg";
+import pointOfSale from "../../assets/point-of-sale-terminal.svg";
+import terminalHealth from "../../assets/love-terminal.svg";
+import settlement from "../../assets/settlement.svg";
+import performance from "../../assets/performance.svg";
+import statements from "../../assets/statements.svg";
+import shoppingPos from "../../assets/shopping-pos.svg";
+import settings from "../../assets/settings.svg";
+import message from "../../assets/message.svg";
+import reconcilation from "../../assets/reconcilation.svg";
+import dispute from "../../assets/dispute.svg";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import classes from "./Sidebar.module.scss";
 

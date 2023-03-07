@@ -1,10 +1,10 @@
 import React from "react";
 import Chart from "react-apexcharts";
-import rate22 from "../assets/rate22.svg";
-import rate14 from "../assets/rate14.svg";
-import rate9 from "../assets/rate9.svg";
-import rate3 from "../assets/rate3.svg";
-import rate2 from "../assets/rate2.svg";
+import rate22 from "../../assets/rate22.svg";
+import rate14 from "../../assets/rate14.svg";
+import rate9 from "../../assets/rate9.svg";
+import rate3 from "../../assets/rate3.svg";
+import rate2 from "../../assets/rate2.svg";
 import classes from "./PieChart.module.scss";
 
 const PieChart = () => {
