@@ -1,0 +1,38 @@
+.btnGroup {
+  display: flex;
+  gap: 0.5rem;
+  button {
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    padding: 0.3rem 0.5rem;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+}
+
+.btnBlue {
+  background-color: #4c6fff;
+  color: #ffff;
+}
+.btnRed {
+  background-color: #dc1d1d;
+  color: #ffff;
+}
+.btnPurple {
+  background-color: #b81fde;
+  color: #ffff;
+}
+.btnOrange {
+  background-color: #ff6934;
+  color: #ffff;
+}
+.btnGreen {
+  background-color: #3dd154;
+  color: #ffff;
+}
+
+.btn {
+  background-color: #ebeef2;
+  color: #3d4c5e;
+}

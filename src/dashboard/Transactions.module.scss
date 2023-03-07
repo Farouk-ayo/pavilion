@@ -155,26 +155,6 @@ main {
   }
 }
 
-.btnGroup {
-  display: flex;
-  gap: 1rem;
-  button {
-    padding: 0.3rem 0.5rem;
-    border-radius: 5px;
-  }
-}
-
-.btnActive {
-  background-color: #4c6fff;
-  color: #ffff;
-}
-
-.btn {
-  padding: 0.3rem 0.5rem;
-  background-color: #ebeef2;
-  color: #3d4c5e;
-}
-
 .funds {
   display: flex;
   flex-direction: column;

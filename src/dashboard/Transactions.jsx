@@ -8,6 +8,7 @@ import Navigation from "../components/layout/Navigation";
 import ColumnChart from "../components/charts/ColumnChart";
 import PieChart from "../components/charts/PieChart";
 import Card from "../components/Card";
+import ButtonTabs from "../components/ButtonTabs";
 
 const Transactions = () => {
   return (
@@ -78,14 +79,7 @@ const Transactions = () => {
                 <h2>10,000</h2>
                 <p>Here’s why your transactions failed!</p>
               </span>
-              <div className={classes.btnGroup}>
-                <button className={classes.btnActive}>Cardholder</button>
-
-                <button className={classes.btn}>Acquirer</button>
-                <button className={classes.btn}>Issuer</button>
-                <button className={classes.btn}>Switch</button>
-                <button className={classes.btn}>Undefined</button>
-              </div>
+              <ButtonTabs />
               <ul className={classes.funds}>
                 {failedDetails.map((each) => (
                   <li key={each.id}>

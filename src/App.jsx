@@ -14,46 +14,12 @@ const router = createBrowserRouter([
       { path: "/performance", element: <Transactions /> },
       { path: "/terminal-health", element: <Transactions /> },
       { path: "/statements", element: <Transactions /> },
-      // {
-      //   path: "/transaction-report",
-      //   element: <TransactReport />,
-      // },
-      // {
-      //   path: "//terminal-health",
-      //   element: <TransactReport />,
-      // },
-      // {
-      //   path: "/settlement",
-      //   element: <TransactReport />,
-      // },
-      // {
-      //   path: "/performance",
-      //   element: <TransactReport />,
-      // },
-      // {
-      //   path: "/statements",
-      //   element: <TransactReport />,
-      // },
-      // {
-      //   path: "/my-terminal",
-      //   element: <TransactReport />,
-      // },
-      // {
-      //   path: "/settings",
-      //   element: <TransactReport />,
-      // },
-      // {
-      //   path: "/message-center",
-      //   element: <TransactReport />,
-      // },
-      // {
-      //   path: "/reconcilation",
-      //   element: <TransactReport />,
-      // },
-      // {
-      //   path: "/Dispute-management",
-      //   element: <TransactReport />,
-      // },
+      { path: "/transaction-report", element: <Transactions /> },
+      { path: "/my-terminal", element: <Transactions /> },
+      { path: "/settings", element: <Transactions /> },
+      { path: "/message-center", element: <Transactions /> },
+      { path: "/reconcilation", element: <Transactions /> },
+      { path: "/Dispute-management", element: <Transactions /> },
     ],
   },
 ]);
