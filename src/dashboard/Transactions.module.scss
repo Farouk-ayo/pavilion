@@ -122,6 +122,7 @@ main {
 
 .failedTransact {
   @include flexColumn();
+  border-radius: 10px;
   h2 {
     @include subText();
   }
@@ -136,7 +137,9 @@ main {
   @include flexColumn();
   width: 50%;
   background-color: #ffffff;
+  border-radius: 10px;
   padding: 2rem;
+
   span {
     display: flex;
     flex-direction: column;
@@ -168,4 +171,38 @@ main {
   padding: 0.3rem 0.5rem;
   background-color: #ebeef2;
   color: #3d4c5e;
+}
+
+.funds {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 2rem 1.5rem;
+  li {
+    list-style: none;
+    position: relative;
+    p {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 19px;
+      position: relative;
+    }
+  }
+}
+
+li::before {
+  content: url("../assets/Ellipse.svg");
+  position: absolute;
+  left: -1rem;
+  top: -0.25rem;
+}
+
+.card {
+  @include flexColumn();
+  h2 {
+    @include subText();
+  }
 }

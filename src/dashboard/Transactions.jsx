@@ -7,7 +7,7 @@ import Table from "../components/Table";
 import Navigation from "../components/Navigation";
 import ColumnChart from "../components/ColumnChart";
 import PieChart from "../components/PieChart";
-import { Button } from "@chakra-ui/react";
+import Card from "../components/Card";
 
 const Transactions = () => {
   return (
@@ -81,8 +81,74 @@ const Transactions = () => {
                 <button className={classes.btn}>Switch</button>
                 <button className={classes.btn}>Undefined</button>
               </div>
+              <ul className={classes.funds}>
+                <li>
+                  <p>
+                    <span>51 (Not sufficient funds)</span>
+                    <span>1,110</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>51 (Not sufficient funds)</span>
+                    <span>1,110</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>51 (Not sufficient funds)</span>
+                    <span>1,110</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>51 (Not sufficient funds)</span>
+                    <span>1,110</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>51 (Not sufficient funds)</span>
+                    <span>1,110</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>51 (Not sufficient funds)</span>
+                    <span>1,110</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>51 (Not sufficient funds)</span>
+                    <span>1,110</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>51 (Not sufficient funds)</span>
+                    <span>1,110</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>51 (Not sufficient funds)</span>
+                    <span>1,110</span>
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>51 (Not sufficient funds)</span>
+                    <span>1,110</span>
+                  </p>
+                </li>
+              </ul>
             </div>
           </section>
+        </section>
+        <section className={classes.card}>
+          <h2>Transactions Per Card Type</h2>
+          <Card />
         </section>
       </section>
     </main>

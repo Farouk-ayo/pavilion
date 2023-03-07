@@ -1,5 +1,10 @@
 import React from "react";
 import Chart from "react-apexcharts";
+import rate22 from "../assets/rate22.svg";
+import rate14 from "../assets/rate14.svg";
+import rate9 from "../assets/rate9.svg";
+import rate3 from "../assets/rate3.svg";
+import rate2 from "../assets/rate2.svg";
 import classes from "./PieChart.module.scss";
 
 const PieChart = () => {
@@ -45,15 +50,6 @@ const PieChart = () => {
       },
     ],
     legend: {
-      //   formatter: function (seriesName, opts) {
-      //     let total = 0;
-      //     let percentage;
-      //     chartData.series.forEach(function (series) {
-      //       total += series;
-      //     });
-      //     percentage = ((seriesName / total) * 100).toFixed(2);
-      //     return seriesName + ": " + percentage + "%";
-      //   },
       position: "top",
       horizontalAlign: "left",
       fontSize: "12px",
@@ -66,6 +62,7 @@ const PieChart = () => {
       },
       offsetY: 0,
       offsetX: -40,
+      padding: "2rem",
       markers: {
         offsetY: 5,
         strokeWidth: 3,
@@ -90,6 +87,28 @@ const PieChart = () => {
         type="donut"
         height={500}
       />
+      <div className={classes.percent}>
+        <div>
+          <img src={rate22} alt="" />
+          <p>22%</p>
+        </div>
+        <div>
+          <img src={rate14} alt="" />
+          <p>14%</p>
+        </div>
+        <div>
+          <img src={rate9} alt="" />
+          <p>9%</p>
+        </div>
+        <div>
+          <img src={rate3} alt="" />
+          <p>3%</p>
+        </div>
+        <div>
+          <img src={rate2} alt="" />
+          <p>2%</p>
+        </div>
+      </div>
     </div>
   );
 };

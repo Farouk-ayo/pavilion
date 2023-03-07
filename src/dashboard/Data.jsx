@@ -1,10 +1,19 @@
 import { Button } from "@chakra-ui/react";
+
+// BUTTONS ROUTES
 import dollarCircle from "../assets/dollar-circle.svg";
 import dollarSquare from "../assets/dollar-square.svg";
 import moneyReceive from "../assets/money-receive.svg";
 import moneySend from "../assets/money-send.svg";
 import terminalTransact from "../assets/terminal-transact.svg";
 
+// CARDS
+import visa from "../assets/visa.svg";
+import masterCard from "../assets/masterCard.svg";
+import verve from "../assets/verve.svg";
+import defaultCard from "../assets/default.svg";
+
+// TRANSACTION
 export const Details = [
   {
     id: 1,
@@ -33,6 +42,7 @@ export const Details = [
   { id: 5, transaction: "Total Terminals", icon: dollarSquare, price: "120" },
 ];
 
+// TRANSACTION DETAILS
 export const transactDetails = [
   {
     id: 1,
@@ -234,5 +244,63 @@ export const transactDetails = [
         Approved
       </Button>
     ),
+  },
+];
+
+// CARD DETAILS
+export const CardDetails = [
+  {
+    id: 1,
+    type: "Visa",
+    image: { visa },
+    approve: "30%",
+    approvePrice: "512",
+    failed: "70%",
+    failedPrice: "3343",
+  },
+  {
+    id: 2,
+    type: "Master Card",
+    image: { masterCard },
+    approve: "75%",
+    approvePrice: "1000",
+    failed: "25%",
+    failedPrice: "311",
+  },
+  {
+    id: 3,
+    type: "Verve",
+    image: { verve },
+    approve: "20%",
+    approvePrice: "121",
+    failed: "80%",
+    failedPrice: "4343",
+  },
+  {
+    id: 4,
+    type: "Card Type",
+    image: { defaultCard },
+    approve: "percent",
+    approvePrice: "Value",
+    failed: "percent",
+    failedPrice: "Value",
+  },
+  {
+    id: 5,
+    type: "Card Type",
+    image: { defaultCard },
+    approve: "percent",
+    approvePrice: "Value",
+    failed: "percent",
+    failedPrice: "Value",
+  },
+  {
+    id: 6,
+    type: "Card Type",
+    image: { defaultCard },
+    approve: "percent",
+    approvePrice: "Value",
+    failed: "percent",
+    failedPrice: "Value",
   },
 ];
