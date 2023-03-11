@@ -1,6 +1,7 @@
 .btnGroup {
   display: flex;
   gap: 0.5rem;
+
   button {
     padding: 0.3rem 0.5rem;
     border-radius: 5px;
@@ -13,25 +14,31 @@
 .btnBlue {
   background-color: #4c6fff;
   color: #ffff;
+  transition: all 0.5s;
 }
 .btnRed {
   background-color: #dc1d1d;
   color: #ffff;
+  transition: all 0.5s;
 }
 .btnPurple {
   background-color: #b81fde;
   color: #ffff;
+  transition: all 0.5s;
 }
 .btnOrange {
   background-color: #ff6934;
   color: #ffff;
+  transition: all 0.5s;
 }
 .btnGreen {
   background-color: #3dd154;
   color: #ffff;
+  transition: all 0.5s;
 }
 
 .btn {
   background-color: #ebeef2;
   color: #3d4c5e;
+  transition: all 0.5s;
 }
